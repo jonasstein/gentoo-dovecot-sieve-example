@@ -1,6 +1,7 @@
 require ["fileinto", "envelope", "imap4flags", "mailbox"];
 # mailbox is required to create folders if they do not exist
 # refresh the folder list in your IMAP client and subscribe new folders
+# Folders will be created on demand.
 
 # Spam filter
 # X-Spam-Score: 5.
@@ -19,6 +20,15 @@ if envelope :is "from" "bugzilla-daemon@gentoo.org" {
   fileinto :create "INBOX.bugs";
   stop;
 }
+
+# example for TO:/CC:
+if header :contains ["to", "cc"] "wg-stable@gentoo.org" {
+        fileinto "INBOX.lists.WG.wg-stable";
+        stop;
+}
+
+
+# a set oft gentoo mailing lists follows. 
 
 if header :contains "List-Id" "gentoo-commits.gentoo.org" {
 	fileinto :create "INBOX.lists.-commits";
