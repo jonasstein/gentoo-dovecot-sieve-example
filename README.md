@@ -12,6 +12,13 @@ Forward all mails to dovecot with
 echo '| "/usr/libexec/dovecot/deliver"' > ~/.forward
 
 
+Todo
+====
+* add more mailinglists
+* test and improve
+* find a good place to distribute. gentoo-wiki? or a file on woodpecker? Suggestions are welcome.
+
+
 License and distribution
 ========================
 http://unlicense.org
