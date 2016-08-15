@@ -9,7 +9,8 @@ Usage
 Copy dovecot.sieve.example to ~/.dovecot.sieve on woodpecker
 
 Forward all mails to dovecot with
-echo '| "/usr/libexec/dovecot/deliver"' > ~/.forward
+
+    echo '| "/usr/libexec/dovecot/deliver"' > ~/.forward
 
 subscribe all folders on commandline
 
