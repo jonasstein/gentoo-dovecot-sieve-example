@@ -10,3 +10,8 @@ Copy dovecot.sieve.example to ~/.dovecot.sieve on woodpecker
 
 Forward all mails to dovecot with
 echo '| "/usr/libexec/dovecot/deliver"' > ~/.forward
+
+
+License and distribution
+========================
+http://unlicense.org
