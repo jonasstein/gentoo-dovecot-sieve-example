@@ -1,0 +1,1 @@
+# gentoo-dovecot-sieve-example
