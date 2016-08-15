@@ -12,7 +12,8 @@ Forward all mails to dovecot with
 echo '| "/usr/libexec/dovecot/deliver"' > ~/.forward
 
 subscribe all folders on commandline
-user@woodpeck ~ $ for b in `doveadm mailbox list`; do doveadm mailbox subscribe $b; done
+
+    user@woodpeck ~ $ for b in `doveadm mailbox list`; do doveadm mailbox subscribe $b; done
 
 Todo
 ====
